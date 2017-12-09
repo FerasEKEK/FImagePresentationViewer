@@ -1,0 +1,6 @@
+framework module Pods_FImagePresentationViewer {
+  umbrella header "Pods-FImagePresentationViewer-umbrella.h"
+
+  export *
+  module * { export * }
+}
