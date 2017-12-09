@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243A611663BCA38638799E75 /* Pods_FImagePresentationViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89D21D7B467E94C01274229 /* Pods_FImagePresentationViewer.framework */; };
 		9D45638B1FDBF5E100EA766F /* FImagePresentationViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D4563891FDBF5E100EA766F /* FImagePresentationViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D4563921FDBF5F500EA766F /* FImagePresentationViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4563911FDBF5F500EA766F /* FImagePresentationViewer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002186BADAD1D832060FD7F2 /* Pods-FImagePresentationViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FImagePresentationViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-FImagePresentationViewer/Pods-FImagePresentationViewer.release.xcconfig"; sourceTree = "<group>"; };
+		609D43D50543822ACEE412D5 /* Pods-FImagePresentationViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FImagePresentationViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FImagePresentationViewer/Pods-FImagePresentationViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		9D4563861FDBF5E100EA766F /* FImagePresentationViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FImagePresentationViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4563891FDBF5E100EA766F /* FImagePresentationViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FImagePresentationViewer.h; sourceTree = "<group>"; };
 		9D45638A1FDBF5E100EA766F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D4563911FDBF5F500EA766F /* FImagePresentationViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FImagePresentationViewer.swift; path = ../../../FImagePresentationViewer.swift; sourceTree = "<group>"; };
+		D89D21D7B467E94C01274229 /* Pods_FImagePresentationViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FImagePresentationViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +27,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243A611663BCA38638799E75 /* Pods_FImagePresentationViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090E3E28F7F014A2B1659AF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D89D21D7B467E94C01274229 /* Pods_FImagePresentationViewer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D45637C1FDBF5E100EA766F = {
 			isa = PBXGroup;
 			children = (
 				9D4563881FDBF5E100EA766F /* FImagePresentationViewer */,
 				9D4563871FDBF5E100EA766F /* Products */,
+				EF8688A0E192C15FD12004DE /* Pods */,
+				090E3E28F7F014A2B1659AF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +63,20 @@
 		9D4563881FDBF5E100EA766F /* FImagePresentationViewer */ = {
 			isa = PBXGroup;
 			children = (
+				9D4563911FDBF5F500EA766F /* FImagePresentationViewer.swift */,
 				9D4563891FDBF5E100EA766F /* FImagePresentationViewer.h */,
 				9D45638A1FDBF5E100EA766F /* Info.plist */,
 			);
 			path = FImagePresentationViewer;
+			sourceTree = "<group>";
+		};
+		EF8688A0E192C15FD12004DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				609D43D50543822ACEE412D5 /* Pods-FImagePresentationViewer.debug.xcconfig */,
+				002186BADAD1D832060FD7F2 /* Pods-FImagePresentationViewer.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D45638E1FDBF5E100EA766F /* Build configuration list for PBXNativeTarget "FImagePresentationViewer" */;
 			buildPhases = (
+				3169373A12E5F50C66475014 /* [CP] Check Pods Manifest.lock */,
 				9D4563811FDBF5E100EA766F /* Sources */,
 				9D4563821FDBF5E100EA766F /* Frameworks */,
 				9D4563831FDBF5E100EA766F /* Headers */,
 				9D4563841FDBF5E100EA766F /* Resources */,
+				6713F20C5DEE56D08B3BA502 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -95,6 +124,7 @@
 				TargetAttributes = {
 					9D4563851FDBF5E100EA766F = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -125,11 +155,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3169373A12E5F50C66475014 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6713F20C5DEE56D08B3BA502 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FImagePresentationViewer/Pods-FImagePresentationViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9D4563811FDBF5E100EA766F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D4563921FDBF5F500EA766F /* FImagePresentationViewer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +315,9 @@
 		};
 		9D45638F1FDBF5E100EA766F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 609D43D50543822ACEE412D5 /* Pods-FImagePresentationViewer.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QK69ZK2HWP;
@@ -264,6 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DatForisProductions.FImagePresentationViewer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -271,7 +338,9 @@
 		};
 		9D4563901FDBF5E100EA766F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 002186BADAD1D832060FD7F2 /* Pods-FImagePresentationViewer.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QK69ZK2HWP;
